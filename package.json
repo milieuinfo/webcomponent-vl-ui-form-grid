@@ -29,9 +29,10 @@
     "np": "3.0.4",
     "replace": "1.1.0",
     "uglify-js-es6": "2.8.9",
+    "vl-ui-input-field": "^1.0.2",
     "vl-ui-util": "1.0.6",
-    "web-component-tester": "6.9.2",
-    "wct-browser-legacy": "1.0.2"
+    "wct-browser-legacy": "1.0.2",
+    "web-component-tester": "6.9.2"
   },
   "publishConfig": {
     "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
