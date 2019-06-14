@@ -1,4 +1,4 @@
-import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.js";
+import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.src.js";
 
 /**
  * VlFormGrid
@@ -31,6 +31,17 @@ export class VlFormGrid extends VlGrid {
  */
 export class VlFormColumn extends VlColumn {
 
+  constructor() {
+    super(`
+         <style>
+                @import '../style.css';
+         </style>
+
+         <slot></slot>
+    `);
+    // this._addStyleLink();
+  }
+
   connectedCallback() {
     this.classList.add('vl-form-column');
     super.connectedCallback();
@@ -40,9 +51,10 @@ export class VlFormColumn extends VlColumn {
     return 'vl-form-col--';
   }
 
-  get _classPrefix() {
-    return 'vl-col--';
-  }
+  // get _stylePath() {
+  //   return '../style.css';
+  // }
+
 }
 
 customElements.define('vl-form-grid', VlFormGrid);
