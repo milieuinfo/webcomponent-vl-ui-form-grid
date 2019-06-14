@@ -1,4 +1,4 @@
-import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.src.js";
+import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.js";
 
 /**
  * VlFormGrid
@@ -7,6 +7,16 @@ import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.src.js";
  * @extends VlGrid
  */
 export class VlFormGrid extends VlGrid {
+
+  constructor() {
+    super(`
+         <style>
+                @import '../style.css';
+         </style>
+         <slot></slot>
+    `);
+  }
+
   connectedCallback() {
     this.classList.add('vl-form-grid');
     this._applyFormLabels();
@@ -39,7 +49,6 @@ export class VlFormColumn extends VlColumn {
 
          <slot></slot>
     `);
-    // this._addStyleLink();
   }
 
   connectedCallback() {
@@ -51,9 +60,9 @@ export class VlFormColumn extends VlColumn {
     return 'vl-form-col--';
   }
 
-  // get _stylePath() {
-  //   return '../style.css';
-  // }
+  get _pushPrefix() {
+    return 'vl-form-push--';
+  }
 
 }
 
