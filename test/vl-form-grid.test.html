@@ -47,11 +47,20 @@
 
     test('de kolom met attributes "size" en "push" heeft bijhorende classes', () => {
       const column = fixture('vl-form-grid-fixture-push-size').querySelector("vl-form-column");
-      console.log(column.classList);
       assert.isTrue(column.classList.contains('vl-form-col--3-4'));
       assert.isTrue(column.classList.contains('vl-form-push--1-4'));
     });
 
+    test('krijgt de juiste class wanneer de grid een attribuut bevat', () => {
+      const grid = fixture('vl-form-grid-fixture');
+      ['is-stacked'].forEach((attribuut) => {
+        assert.isFalse(grid.classList.contains('vl-form-grid--' + attribuut));
+        grid.setAttribute(attribuut, '');
+        assert.isTrue(grid.classList.contains('vl-form-grid--' + attribuut));
+        grid.removeAttribute(attribuut);
+        assert.isFalse(grid.classList.contains('vl-form-grid--' + attribuut));
+      });
+    });
 
   });
 </script>
