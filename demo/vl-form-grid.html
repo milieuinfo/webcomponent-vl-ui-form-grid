@@ -6,8 +6,6 @@
   <script type="module" src="/node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
   <script type="module" src="../vl-form-grid.src.js"></script>
   <script type="module" src="/node_modules/vl-ui-input-field/vl-input-field.js"></script>
-
-  <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-form-message/style.css"/>
 </head>
 
 <body>
@@ -32,7 +30,7 @@
 
 
 <div>
-  <h2>Formulier kolommen</h2>
+  <h2>Formulier kolommen met formulier label</h2>
     <pre>
       <code class="line-numbers language-markup">
         <div class="demo">
@@ -63,7 +61,7 @@
     <form>
       <vl-form-grid>
         <vl-form-column size="4" max-size="12">
-          <label for="txt">Label dat 4/12 van de grid breedte inneemt</label>
+          <label is="vl-form-label" for="txt">Label dat 4/12 van de grid breedte inneemt</label>
         </vl-form-column>
         <vl-form-column size="8" max-size="12">
           <input id="txt" is='vl-input-field' value="Text veld dat 8/12 van de grid breedte inneemt" block/>

@@ -1,4 +1,5 @@
-import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.js";
+import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.src.js";
+import {NativeVlElement} from '/node_modules/vl-ui-core/vl-core.src.js';
 
 /**
  * VlFormGrid
@@ -7,29 +8,8 @@ import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.js";
  * @extends VlGrid
  */
 export class VlFormGrid extends VlGrid {
-
-  constructor() {
-    super(`
-         <style>
-                @import '../style.css';
-         </style>
-         <slot></slot>
-    `);
-  }
-
   connectedCallback() {
     this.classList.add('vl-form-grid');
-    this._applyFormLabels();
-  }
-
-  get _labels() {
-    return this.querySelectorAll("label");
-  }
-
-  _applyFormLabels() {
-    this._labels.forEach(label => {
-      label.classList.add("vl-form__label");
-    });
   }
 }
 
@@ -40,16 +20,6 @@ export class VlFormGrid extends VlGrid {
  * @extends VlColumn
  */
 export class VlFormColumn extends VlColumn {
-
-  constructor() {
-    super(`
-         <style>
-                @import '../style.css';
-         </style>
-
-         <slot></slot>
-    `);
-  }
 
   connectedCallback() {
     this.classList.add('vl-form-column');
@@ -65,6 +35,23 @@ export class VlFormColumn extends VlColumn {
   }
 
 }
+/**
+ * VlFormLabel
+ * @class
+ * @classdesc Class die een label in een formulier grid layout representeert.
+ */
+export class VlFormLabel extends NativeVlElement(HTMLLabelElement) {
+
+  connectedCallback() {
+    this.classList.add('vl-form__label');
+  }
+
+  get _stylePath() {
+    return '../style.css';
+  }
+
+}
 
 customElements.define('vl-form-grid', VlFormGrid);
 customElements.define('vl-form-column', VlFormColumn);
+customElements.define('vl-form-label', VlFormLabel,  {extends: 'label'});
