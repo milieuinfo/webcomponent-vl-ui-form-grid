@@ -11,6 +11,10 @@ export class VlFormGrid extends VlGrid {
   connectedCallback() {
     this.classList.add('vl-form-grid');
   }
+
+  get _classPrefix() {
+    return 'vl-form-grid--';
+  }
 }
 
 /**
