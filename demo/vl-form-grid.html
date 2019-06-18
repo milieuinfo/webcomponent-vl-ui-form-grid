@@ -7,7 +7,6 @@
     <script type="module" src="../vl-form-grid.src.js"></script>
     <script type="module" src="/node_modules/vl-ui-input-field/vl-input-field.js"></script>
     <script type="module" src="/node_modules/vl-ui-form-message/vl-form-message.js"></script>
-    <link rel="stylesheet" href="custom.css">
   </head>
 
   <body>
@@ -19,40 +18,30 @@
 
     <div>
       <h2>Formulier grid</h2>
-      <div class="demo">
-        <pre>
-            <code class="line-numbers language-markup">
-            &lt;div is=&quot;vl-form-grid&quot;&gt;
-              ...
-            &lt;/div&gt;
-            </code>
-          </pre>
-      </div>
-      <div class="demo">
-        <form>
-          <div is="vl-form-grid">
-          </div>
-        </form>
-      </div>
+      <pre>
+          <code class="line-numbers language-markup">
+          &lt;div is=&quot;vl-form-grid&quot;&gt;
+            ...
+          &lt;/div&gt;
+          </code>
+        </pre>
     </div>
 
 
     <div>
       <h2>Formulier grid met kolommen</h2>
-      <div class="demo">
-        <pre>
-          <code class="line-numbers language-markup">
-            &lt;div is=&quot;vl-form-grid&quot;&gt;
-              &lt;div is=&quot;vl-form-column&quot; size=&quot;4&quot; max-size=&quot;12&quot;&gt;
-                &lt;label is=&quot;vl-form-message&quot; for=&quot;txt&quot;&gt;Label dat 4/12 van de grid breedte inneemt&lt;/label&gt;
-              &lt;/div&gt;
-              &lt;div is=&quot;vl-form-column&quot; size=&quot;8&quot; max-size=&quot;12&quot;&gt;
-                &lt;input id=&quot;txt&quot; is=&#39;vl-input-field&#39; value=&quot;Text veld dat 8/12 van de grid breedte inneemt&quot; block/&gt;
-              &lt;/div&gt;
+      <pre>
+        <code class="line-numbers language-markup">
+          &lt;div is=&quot;vl-form-grid&quot;&gt;
+            &lt;div is=&quot;vl-form-column&quot; size=&quot;4&quot; max-size=&quot;12&quot;&gt;
+              &lt;label is=&quot;vl-form-message&quot; for=&quot;txt&quot;&gt;Label dat 4/12 van de grid breedte inneemt&lt;/label&gt;
             &lt;/div&gt;
-          </code>
-        </pre>
-      </div>
+            &lt;div is=&quot;vl-form-column&quot; size=&quot;8&quot; max-size=&quot;12&quot;&gt;
+              &lt;input id=&quot;txt&quot; is=&#39;vl-input-field&#39; value=&quot;Text veld dat 8/12 van de grid breedte inneemt&quot; block/&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        </code>
+      </pre>
       <div class="demo">
         <form>
           <div is="vl-form-grid">
