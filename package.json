@@ -1,6 +1,6 @@
 {
   "name": "vl-ui-form-grid",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "De vl-form-grid webcomponent maakt heb mogelijk om opmaak te geven aan formulieren",
   "main": "vl-form-grid.js",
   "scripts": {
