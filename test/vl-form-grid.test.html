@@ -13,13 +13,13 @@
 <body>
 <test-fixture id="vl-form-grid-fixture">
   <template>
-    <vl-form-grid><vl-form-column><label is="vl-form-label">foo</label></vl-form-column></vl-form-grid>
+    <div is="vl-form-grid"><div is="vl-form-column"></div></div>
   </template>
 </test-fixture>
 
 <test-fixture id="vl-form-grid-fixture-push-size">
   <template>
-    <vl-form-grid><vl-form-column size="3" max-size="4" push="1"></vl-form-column></vl-form-grid>
+    <div is="vl-form-grid"><div is="vl-form-column" size="3" max-size="4" push="1"></div></div>
   </template>
 </test-fixture>
 
@@ -31,22 +31,17 @@
     });
 
     test('de kolom heeft de vl-form-grid class', () => {
-      const column = fixture('vl-form-grid-fixture').querySelector("vl-form-column");
+      const column = fixture('vl-form-grid-fixture').querySelector("div[is='vl-form-column']");
       assert.isTrue(column.classList.contains('vl-form-column'));
     });
 
-    test('het label heeft de vl-form__label class', () => {
-      const column = fixture('vl-form-grid-fixture').querySelector("label");
-      assert.isTrue(column.classList.contains('vl-form__label'));
-    });
-
     test('de kolom heeft de vl-form-grid class', () => {
-      const column = fixture('vl-form-grid-fixture').querySelector("vl-form-column");
+      const column = fixture('vl-form-grid-fixture').querySelector("div[is='vl-form-column']");
       assert.isTrue(column.classList.contains('vl-form-column'));
     });
 
     test('de kolom met attributes "size" en "push" heeft bijhorende classes', () => {
-      const column = fixture('vl-form-grid-fixture-push-size').querySelector("vl-form-column");
+      const column = fixture('vl-form-grid-fixture-push-size').querySelector("div[is='vl-form-column']");
       assert.isTrue(column.classList.contains('vl-form-col--3-4'));
       assert.isTrue(column.classList.contains('vl-form-push--1-4'));
     });
