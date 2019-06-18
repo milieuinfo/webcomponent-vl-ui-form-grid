@@ -31,6 +31,9 @@
     "uglify-js-es6": "2.8.9",
     "vl-ui-input-field": "^1.0.2",
     "vl-ui-form-message": "2.0.0",
+    "vl-ui-button": "1.0.6",
+    "vl-ui-checkbox": "1.0.6",
+    "vl-ui-textarea": "1.0.2",
     "vl-ui-util": "1.0.6",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2"
