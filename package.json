@@ -1,6 +1,6 @@
 {
   "name": "vl-ui-form-grid",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "De vl-form-grid webcomponent maakt heb mogelijk om opmaak te geven aan formulieren",
   "main": "vl-form-grid.js",
   "scripts": {
@@ -17,8 +17,8 @@
     "demo": "http-server"
   },
   "dependencies": {
-    "vl-ui-core": "1.4.3",
-    "vl-ui-grid": "1.0.4"
+    "vl-ui-core": "1.4.4",
+    "vl-ui-grid": "1.0.6"
   },
   "peerDependencies": {
     "vl-ui-core": "^1.4.2"
@@ -31,9 +31,9 @@
     "uglify-js-es6": "2.8.9",
     "vl-ui-button": "1.0.10",
     "vl-ui-checkbox": "1.0.9",
-    "vl-ui-form-message": "2.1.1",
-    "vl-ui-input-field": "1.0.4",
-    "vl-ui-textarea": "1.0.4",
+    "vl-ui-form-message": "2.2.1",
+    "vl-ui-input-field": "1.0.6",
+    "vl-ui-textarea": "1.0.5",
     "vl-ui-util": "^1.2.3",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2"
