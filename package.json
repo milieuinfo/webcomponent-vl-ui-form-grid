@@ -17,7 +17,7 @@
     "demo": "http-server"
   },
   "dependencies": {
-    "vl-ui-core": "1.4.4",
+    "vl-ui-core": "1.4.6",
     "vl-ui-grid": "^1.0.6"
   },
   "peerDependencies": {
@@ -25,16 +25,16 @@
     "vl-ui-grid": "^1.0.6"
   },
   "devDependencies": {
-    "@govflanders/vl-ui-core": "3.7.2",
+    "@govflanders/vl-ui-core": "3.9.0",
     "http-server": "0.11.1",
     "np": "3.0.4",
-    "replace": "1.1.0",
+    "replace": "1.1.1",
     "uglify-js-es6": "2.8.9",
     "vl-ui-button": "1.0.10",
     "vl-ui-checkbox": "1.0.14",
-    "vl-ui-form-message": "2.2.1",
-    "vl-ui-input-field": "1.0.6",
-    "vl-ui-textarea": "1.0.5",
+    "vl-ui-form-message": "2.2.6",
+    "vl-ui-input-field": "1.0.11",
+    "vl-ui-textarea": "1.0.9",
     "vl-ui-util": "^1.2.23",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2"
