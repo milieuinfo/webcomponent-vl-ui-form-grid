@@ -34,7 +34,7 @@
     "vl-ui-checkbox": "1.0.14",
     "vl-ui-form-message": "2.2.6",
     "vl-ui-input-field": "1.0.11",
-    "vl-ui-textarea": "1.0.9",
+    "vl-ui-textarea": "1.0.10",
     "vl-ui-util": "2.0.3",
     "wct-browser-legacy": "1.0.2",
     "web-component-tester": "6.9.2"
