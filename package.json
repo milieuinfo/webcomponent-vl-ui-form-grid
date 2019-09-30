@@ -32,7 +32,7 @@
     "uglify-js-es6": "2.8.9",
     "vl-ui-button": "^1.1.12",
     "vl-ui-checkbox": "^1.0.15",
-    "vl-ui-form-message": "2.2.6",
+    "vl-ui-form-message": "2.2.7",
     "vl-ui-input-field": "^1.0.12",
     "vl-ui-textarea": "^1.0.10",
     "vl-ui-util": "^2.0.6",
