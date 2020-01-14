@@ -37,11 +37,11 @@ export class VlFormColumn extends VlColumn {
     this.classList.add('vl-form-column');
   }
 
-  get _classPrefix() {
+  get _columnClassPrefix() {
     return 'vl-form-col--';
   }
 
-  get _pushPrefix() {
+  get _pushClassPrefix() {
     return 'vl-form-push--';
   }
 
