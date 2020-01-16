@@ -44,7 +44,7 @@
     "vl-ui-form-message": "^3.0.0",
     "vl-ui-input-field": "1.1.2",
     "vl-ui-textarea": "^1.0.10",
-    "vl-ui-util": "^3.2.5"
+    "vl-ui-util": "^3.4.1"
   },
   "publishConfig": {
     "registry": "http://artifactory-pr-build.lb.cumuli.be:8081/artifactory/api/npm/acd-npm/"
