@@ -1,5 +1,5 @@
 
-const { assert, driver } = require('vl-ui-core').Test;
+const { assert, driver } = require('vl-ui-core').Test.Setup;
 const VlFormGridPage = require('./pages/vl-form-grid.page');
 
 describe('vl-form-grid', async () => {
