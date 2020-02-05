@@ -1,6 +1,5 @@
 const VlFormGrid = require('../components/vl-form-grid');
-const { Page, Config } = require('vl-ui-core');
-const { By } = require('selenium-webdriver');
+const { Page, Config } = require('vl-ui-core').Test;
 
 class VlFormGridPage extends Page {
     async _getVlFormGrid(selector) {
