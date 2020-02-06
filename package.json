@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "vl-ui-core": "^4.0.0",
-    "vl-ui-grid": "^1.1.1"
+    "vl-ui-grid": "^2.0.0"
   },
   "peerDependencies": {
     "vl-ui-core": "^4.0.0",
@@ -56,7 +56,7 @@
   "devDependencies": {
     "@govflanders/vl-ui-core": "3.9.1",
     "vl-ui-checkbox": "^1.0.18",
-    "vl-ui-form-message": "^3.0.0",
+    "vl-ui-form-message": "^4.0.0",
     "vl-ui-input-field": "1.1.2",
     "vl-ui-textarea": "^1.0.10",
     "vl-ui-util": "^4.0.1"
