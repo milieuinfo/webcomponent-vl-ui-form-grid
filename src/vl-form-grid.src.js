@@ -1,5 +1,5 @@
 import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.js";
-import {define} from "/node_modules/vl-ui-core/vl-core.js";
+import {define} from "/node_modules/vl-ui-core/dist/vl-core.js";
 
 /**
  * VlFormGrid
@@ -32,7 +32,6 @@ export class VlFormGrid extends VlGrid {
  * @see {@link https://webcomponenten.omgeving.vlaanderen.be/demo/vl-form-grid.html|Demo}
  */
 export class VlFormColumn extends VlColumn {
-
   connectedCallback() {
     this.classList.add('vl-form-column');
   }
