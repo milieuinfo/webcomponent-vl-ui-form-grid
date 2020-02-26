@@ -1,5 +1,5 @@
-import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/vl-grid.js";
-import {define} from "/node_modules/vl-ui-core/vl-core.js";
+import {VlGrid, VlColumn} from "/node_modules/vl-ui-grid/dist/vl-grid.js";
+import {define} from "/node_modules/vl-ui-core/dist/vl-core.js";
 
 /**
  * VlFormGrid
