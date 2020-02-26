@@ -8,7 +8,9 @@ describe('vl-form-grid', async () => {
     before(() => {
         return vlFormGridPage.load();
     });
-
+    
+    it("Dummy test om de browser te sluiten", () => {
+    	assert.isTrue(true);
+    });
    
-    after(() => driver && driver.quit());
 });
