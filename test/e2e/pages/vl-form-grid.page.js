@@ -21,22 +21,6 @@ class VlFormGridPage extends Page {
     async getVoornaamFormColumn() {
         return this._getVlFormColumn('#form-column-voornaam');
     }
-
-    async getNaamFormColumn() {
-        return this._getVlFormColumn('#form-column-naam');
-    }
-
-    async getLoveFormColumn() {
-        return this._getVlFormColumn('#form-column-love');
-    }
-
-    async getOpmerkingFormColumn() {
-        return this._getVlFormColumn('#form-column-opmerking');
-    }
-
-    async getSaveFormColumn() {
-        return this._getVlFormColumn('#form-column-save');
-    }
 }
 
 module.exports = VlFormGridPage;
