@@ -32,7 +32,6 @@ export class VlFormGrid extends VlGrid {
  * @see {@link https://webcomponenten.omgeving.vlaanderen.be/demo/vl-form-grid.html|Demo}
  */
 export class VlFormColumn extends VlColumn {
-
   connectedCallback() {
     this.classList.add('vl-form-column');
   }
@@ -48,4 +47,3 @@ export class VlFormColumn extends VlColumn {
 
 define('vl-form-grid', VlFormGrid, {extends: 'div'});
 define('vl-form-column', VlFormColumn, {extends: 'div'});
-
