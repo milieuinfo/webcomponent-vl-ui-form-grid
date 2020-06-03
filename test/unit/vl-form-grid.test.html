@@ -31,17 +31,17 @@
     });
 
     test('de kolom heeft de vl-form-grid class', () => {
-      const column = fixture('vl-form-grid-fixture').querySelector("div[is='vl-form-column']");
+      const column = fixture('vl-form-grid-fixture').querySelector('div[is=\'vl-form-column\']');
       assert.isTrue(column.classList.contains('vl-form-column'));
     });
 
     test('de kolom heeft de vl-form-grid class', () => {
-      const column = fixture('vl-form-grid-fixture').querySelector("div[is='vl-form-column']");
+      const column = fixture('vl-form-grid-fixture').querySelector('div[is=\'vl-form-column\']');
       assert.isTrue(column.classList.contains('vl-form-column'));
     });
 
     test('de kolom met attributes "size" en "push" heeft bijhorende classes', () => {
-      const column = fixture('vl-form-grid-fixture-push-size').querySelector("div[is='vl-form-column']");
+      const column = fixture('vl-form-grid-fixture-push-size').querySelector('div[is=\'vl-form-column\']');
       assert.isTrue(column.classList.contains('vl-form-col--3-4'));
       assert.isTrue(column.classList.contains('vl-form-push--1-4'));
     });
@@ -56,7 +56,6 @@
         assert.isFalse(grid.classList.contains('vl-form-grid--' + attribuut));
       });
     });
-
   });
 </script>
 </body>
