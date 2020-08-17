@@ -13,16 +13,3 @@ describe('vl-form-grid', async () => {
     await assert.eventually.isTrue(formGrid.isStacked());
   });
 });
-
-describe('vl-form-column', async () => {
-  const vlFormGridPage = new VlFormGridPage(driver);
-
-  before(() => {
-    return vlFormGridPage.load();
-  });
-
-  it('de form columns in de voorkeuren grid hebben de juiste grootte', async () => {
-    const voornaamColumn = await vlFormGridPage.getVoornaamFormColumn();
-    await assert.eventually.equal(voornaamColumn.getSize(), 12);
-  });
-});

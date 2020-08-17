@@ -4,23 +4,23 @@
 <head>
     <title>vl-form-grid voorbeeld</title>
     <script type="module" src="/node_modules/vl-ui-demo/dist/vl-demo-all.js"></script>
-
-    <script type="module" src="/src/vl-form-grid.js"></script>
+    <script type="module" src="/node_modules/vl-ui-body/dist/vl-body.js"></script>
     <script type="module" src="/node_modules/vl-ui-input-field/dist/vl-input-field.js"></script>
     <script type="module" src="/node_modules/vl-ui-form-message/dist/vl-form-message.js"></script>
     <script type="module" src="/node_modules/vl-ui-button/dist/vl-button.js"></script>
-    <script type="module" src="/node_modules/vl-ui-checkbox/dist/vl-checkbox.js"></script>
     <script type="module" src="/node_modules/vl-ui-textarea/dist/vl-textarea.js"></script>
 
+    <script type="module" src="/src/vl-form-grid.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/src/style.css" />
+    <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-body/dist/style.css" />
     <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-input-field/dist/style.css" />
     <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-form-message/dist/style.css" />
     <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-button/dist/style.css" />
-    <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-checkbox/dist/style.css" />
     <link rel="stylesheet" type="text/css" href="/node_modules/vl-ui-textarea/dist/style.css" />
-    <link rel="stylesheet" type="text/css" href="/src/style.css" />
 </head>
 
-<body>
+<body is="vl-body">
     <vl-demo-page data-vl-webcomponent="vl-form-grid" data-vl-link="https://overheid.vlaanderen.be/webuniversum/v3/documentation/grid">
         <vl-demo data-vl-title="Formulier">
             <form>
@@ -32,9 +32,6 @@
                     <div id="form-column-naam" is="vl-form-column" data-vl-size="12">
                         <label is="vl-form-label" for="txt2" data-vl-block>Naam</label>
                         <input id="txt2" is='vl-input-field' data-vl-placeholder="Bosmans" data-vl-block />
-                    </div>
-                    <div id="form-column-love" is="vl-form-column" data-vl-size="12">
-                        <vl-checkbox data-vl-label="Ik hou van webcomponenten" data-vl-checked></vl-checkbox>
                     </div>
                     <div id="form-column-opmerking" is="vl-form-column" data-vl-size="12">
                         <label is="vl-form-label" for="txta" data-vl-block>Opmerking</label>
