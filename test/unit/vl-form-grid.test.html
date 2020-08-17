@@ -50,9 +50,9 @@
       const grid = fixture('vl-form-grid-fixture');
       ['is-stacked'].forEach((attribuut) => {
         assert.isFalse(grid.classList.contains('vl-form-grid--' + attribuut));
-        grid.setAttribute(attribuut, '');
+        grid.setAttribute(`data-vl-${attribuut}`, '');
         assert.isTrue(grid.classList.contains('vl-form-grid--' + attribuut));
-        grid.removeAttribute(attribuut);
+        grid.removeAttribute(`data-vl-${attribuut}`);
         assert.isFalse(grid.classList.contains('vl-form-grid--' + attribuut));
       });
     });
