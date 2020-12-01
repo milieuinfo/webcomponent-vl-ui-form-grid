@@ -1,10 +1,11 @@
-const {assert, driver} = require('vl-ui-core').Test.Setup;
+const {assert, getDriver} = require('vl-ui-core').Test.Setup;
 const VlFormGridPage = require('./pages/vl-form-grid.page');
 
 describe('vl-form-column', async () => {
-  const vlFormGridPage = new VlFormGridPage(driver);
+  let vlFormGridPage;
 
   before(() => {
+    vlFormGridPage = new VlFormGridPage(getDriver());
     return vlFormGridPage.load();
   });
 
