@@ -18,8 +18,12 @@ class VlFormGridPage extends Page {
     return this._getVlFormGrid('[is="vl-form-grid"]');
   }
 
-  async getNameFormColumn() {
-    return this._getVlFormColumn('#surname-column');
+  async getNameLabelFormColumn() {
+    return this._getVlFormColumn('#surname-label-column');
+  }
+
+  async getNameInputFormColumn() {
+    return this._getVlFormColumn('#surname-input-column');
   }
 }
 
