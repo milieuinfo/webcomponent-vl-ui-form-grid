@@ -10,7 +10,7 @@ describe('vl-form-grid', async () => {
   });
 
   it('de form grid met voorkeuren is stacked', async () => {
-    const formGrid = await vlFormGridPage.getVoorkeurFormGrid();
+    const formGrid = await vlFormGridPage.getFormGrid();
     await assert.eventually.isTrue(formGrid.isStacked());
   });
 });

@@ -10,7 +10,7 @@ describe('vl-form-column', async () => {
   });
 
   it('de form columns in de voorkeuren grid hebben de juiste grootte', async () => {
-    const column = await vlFormGridPage.getVoornaamFormColumn();
+    const column = await vlFormGridPage.getNameFormColumn();
     await assert.eventually.equal(column.getSize(), 2);
   });
 });
