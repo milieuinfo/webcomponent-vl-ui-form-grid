@@ -14,12 +14,16 @@ class VlFormGridPage extends Page {
     await super.load(`${Config.baseUrl}/demo/vl-form-grid.html`);
   }
 
-  async getVoorkeurFormGrid() {
-    return this._getVlFormGrid('#form-grid-voorkeur');
+  async getFormGrid() {
+    return this._getVlFormGrid('[is="vl-form-grid"]');
   }
 
-  async getVoornaamFormColumn() {
-    return this._getVlFormColumn('#form-column-voornaam');
+  async getNameLabelFormColumn() {
+    return this._getVlFormColumn('#surname-label-column');
+  }
+
+  async getNameInputFormColumn() {
+    return this._getVlFormColumn('#surname-input-column');
   }
 }
 
