@@ -19,7 +19,7 @@ class VlFormGridPage extends Page {
   }
 
   async getNameFormColumn() {
-    return this._getVlFormColumn('#surname');
+    return this._getVlFormColumn('#surname-column');
   }
 }
 
